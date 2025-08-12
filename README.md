@@ -1,5 +1,5 @@
-## 📄 Doc Fusion
-Doc Fusion turns collections of PDFs into a searchable knowledge base and produces polished, paper-style summaries and question papers. It combines LlamaParse for robust PDF parsing, Milvus for vector search, and Gemini for high‑quality generation — with one-click Streamlit UI and a clean automation CLI.
+## 📄 Paper Brain
+Paper Brain turns collections of PDFs into a searchable knowledge base and produces polished, paper-style summaries and question papers. It combines LlamaParse for robust PDF parsing, Milvus for vector search, and Gemini for high‑quality generation — with one-click Streamlit UI and a clean automation CLI.
 
 ### Why this is compelling
 - **Multi-document to multi-section**: Abstract, Introduction, Methodology, Results, Conclusion, References — generated coherently across papers.
@@ -108,8 +108,8 @@ Outputs:
 ## 🧰 Optional: Build the app image
 The provided Dockerfile runs the Streamlit app and bundles Pandoc/TeXLive. For most setups, running the app locally (as above) while Milvus runs via Docker is simplest. If you do containerize the app, ensure it can reach Milvus at `localhost:19530` from inside the container (networking may need adjustment).
 ```bash
-docker build -t doc-fusion .
-docker run --env-file .env -p 8501:8501 doc-fusion
+docker build -t Paper-Brain .
+docker run --env-file .env -p 8501:8501 Paper-Brain
 ```
 
 ## 🔍 Troubleshooting
